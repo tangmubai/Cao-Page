@@ -1,0 +1,43 @@
+/* Template styles extracted from template/index.html */
+.site-font{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif}
+body{font-family:var(--site-font, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif);margin:0;color:#16313f}
+.topbar{background:#0473b8;color:#fff;padding:6px 16px;font-size:13px}
+.header{background:linear-gradient(180deg,#0a6ed1,#0573c6);color:#fff;padding:14px 16px}
+.wrap{max-width:1200px;margin:0 auto}
+.hd-nav ul{display:flex;gap:14px;padding:0;margin:0;list-style:none;align-items:center}
+.hd-nav a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:4px;font-weight:600}
+.hd-nav a:hover{background:rgba(255,255,255,0.06)}
+.sy{background:#eaf6ff;padding:24px 0}
+.news-columns{display:flex;gap:24px;max-width:1200px;margin:18px auto;padding:0 16px}
+.news-left{flex:1}
+.news-list{list-style:none;padding:0;margin:0}
+.news-list li{padding:12px 0;border-bottom:1px solid #f0f6fa}
+.news-list a{color:#0b2b3a;text-decoration:none}
+.news-list a:hover{text-decoration:underline}
+.news-right{width:340px}
+.footer{background:#f6f9fb;padding:22px 0;margin-top:20px}
+.footer .wrap{display:flex;gap:24px;align-items:flex-start}
+
+/* small responsive tweaks */
+@media(max-width:900px){
+  .hd-nav ul{flex-direction:column;gap:8px}
+  .news-columns{flex-direction:column;padding:0 12px}
+  .news-right{width:100%}
+}
+
+/* Swiper controls styling to match SJTU visual */
+.swiper-button-prev, .swiper-button-next{
+  color: rgba(255,255,255,0.95);
+  width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,0.18);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,0.2)
+}
+.swiper-button-prev:after, .swiper-button-next:after{font-size:18px}
+.swiper-pagination-bullet{background:rgba(255,255,255,0.5);opacity:1}
+.swiper-pagination-bullet-active{background:#fff}
+
+/* Footer link style */
+.footer a{color:#0b2b3a;text-decoration:none}
+.footer a:hover{text-decoration:underline}
+
+/* Headings */
+h3{font-size:20px;color:var(--dark,#0b2b3a);margin:0 0 12px 0;font-weight:700}
+

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>上海交通大学 · 二草行为学学院</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap">欢迎访问 上海交通大学 · 二草行为学学院 &nbsp;&nbsp; <a href="#" style="color:#fff;">English</a></div>
+  </div>
+  <header class="header">
+    <div class="wrap">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:12px">
+          <img src="assets/sjtu-logo.png" alt="logo" style="width:76px;height:76px;object-fit:contain;background:#fff;padding:6px;border-radius:4px">
+          <div>
+            <div style="font-weight:800;font-size:20px">上海交通大学</div>
+            <div style="font-size:14px;opacity:0.95">二草行为学学院</div>
+          </div>
+        </div>
+        <nav class="hd-nav">
+          <ul>
+            <li><a href="#">首 页</a></li>
+            <li><a href="#">院系概况</a></li>
+            <li><a href="#">师资队伍</a></li>
+            <li><a href="#">科学研究</a></li>
+            <li><a href="#">学生工作</a></li>
+            <li><a href="#">党建工作</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="sy">
+    <div class="wrap">
+      <!-- Swiper -->
+      <div class="swiper mySwiper" style="height:320px;border-radius:6px;overflow:hidden">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://picsum.photos/1200/320?random=21" style="width:100%;height:320px;object-fit:cover"></div>
+          <div class="swiper-slide"><img src="https://picsum.photos/1200/320?random=22" style="width:100%;height:320px;object-fit:cover"></div>
+          <div class="swiper-slide"><img src="https://picsum.photos/1200/320?random=23" style="width:100%;height:320px;object-fit:cover"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="news-columns">
+      <div class="news-left">
+        <h3>新闻动态</h3>
+        <ul class="news-list">
+          <li><a href="#">[2026-03-10] 学院新闻示例：召开学术研讨会</a></li>
+          <li><a href="#">[2026-03-03] 学术讲座：人工智能与行为学</a></li>
+          <li><a href="#">[2026-02-20] 学生成果展示</a></li>
+          <li><a href="#">[2026-01-15] 教师招聘启事</a></li>
+        </ul>
+      </div>
+      <aside class="news-right">
+        <div style="background:#fff;padding:12px;border-radius:6px;box-shadow:0 4px 12px rgba(12,30,40,0.04)">
+          <h4>快捷入口</h4>
+          <ul style="padding:0;margin:0;list-style:none">
+            <li><a href="#">招生信息</a></li>
+            <li><a href="#">科研平台</a></li>
+            <li><a href="#">图书资源</a></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div style="flex:1">
+        <strong>联系信息</strong>
+        <div>地址：上海市 XX 区 XX 路 XX 号</div>
+        <div>电话：021-XXXX-XXXX</div>
+      </div>
+      <div style="flex:1">
+        <strong>友情链接</strong>
+        <div><a href="#">上海交通大学</a></div>
+        <div><a href="#">教务处</a></div>
+      </div>
+      <div style="flex:1">
+        <strong>版权</strong>
+        <div>© 2026 上海交通大学 二草行为学学院</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: { delay: 3000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }
+    });
+  </script>
+</body>
+</html>
